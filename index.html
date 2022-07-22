@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" type="image/svg" href="./pictures/programmer.svg">
+    <title>Project 01</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --primary-color: #ca4361;
+            --paragraph:#979797;
+        }
+
+        body{
+            font-family: 'Inter', sans-serif;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        
+        .links{
+            list-style-type: none;
+            display: flex;
+            
+        }
+        .links a{
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            font-size: 20px;
+            margin-right: 20px ;
+        }
+
+        .links a:hover{
+            color:var(--primary-color);
+            transition: all;
+            transition-duration: .2s;
+        }
+
+        .buttons button{
+            font-size: 20px;
+            margin-left: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            height: 51px;
+            width: 145px;
+            transition: all;
+            transition-duration: .2s;
+            
+        }
+
+        .filled{
+            background-color: var(--primary-color);
+            color: #fff;
+            border: 1px solid transparent;
+        }
+
+        .filled:hover{
+            background-color: white;
+            border-color: var(--primary-color);
+            color: #ca4361;
+
+        }
+
+        .outlined{
+            background-color: white;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .outlined:hover{
+            background-color: var(--primary-color);
+            color: white;
+            border: 1px solid transparent;
+        }
+
+        .Line{
+            border:2px solid var(--primary-color);
+            width: 32px;
+            border-radius: 20px;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        nav{
+            display:flex;
+            justify-content: space-between;
+            padding: 40px;
+            padding-top: 60px;
+        }
+
+
+        /*Content Styling*/
+        main{
+            padding: 30px 0;
+            display: flex;
+            justify-content: center;
+            /*vertically align*/
+            align-items: center;
+            margin-top: 100px;
+
+        }
+
+        .Hero{
+        }
+
+        .Hero h1{
+            font-size: 52px;
+            font-weight: 600;
+            margin-right: 60px;
+            width: 446px;
+
+        }
+
+        .Hero span{
+            color: var(--primary-color);
+        }
+
+        .Hero p{
+            margin-top: 22px;
+            font-size: 25px;
+            width: 370px;
+            color: var(--paragraph);
+
+        }
+
+        .Hero .cta{
+            width:270px;
+            height: 65px;
+            background-color: var(--primary-color);
+            color:white;
+            font-size: 21px;
+            border: 1px solid transparent;
+            border-radius: 6px;
+            margin-top: 40px;
+            transition: all;
+            transition-duration: .2s;
+            cursor: pointer;
+        }
+        .cta:hover{
+            background-color: white;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+
+    </style>    
+</head>
+
+<body>
+    <header>
+        <!--Nav Bar-->
+        <nav>
+            <!--Links-->
+            <ul class="links">
+                <li>
+                    <a href="">About me</a>
+                    <div class="Line">
+                        
+                    </div>
+                </li>
+                <li>
+                    <a href="">Services</a>
+                </li>
+                <li>
+                    <a href="">Company</a>
+                </li>
+            </ul>
+
+            <!--Buttons-->
+            <div class="buttons">
+                <button class="filled">
+                    Sign up
+                </button>
+                <button class="outlined">
+                    Login
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Content-->
+        
+        <!--Hero Section-->
+        <section class="Hero">
+            <h1>I am a Full Stack <span>Web Applicaction</span> Developer</h1>
+            <p>
+                I bring your Ideas to life using top-notch skills with more than 2 years of experience!
+            </p>
+            
+             <!--call to action-->
+             <button class="cta">
+                Hire me
+             </button>
+        </section>
+
+
+        <!--Illsutration-->
+        <section class="illsutration">
+            <img src="./pictures/illustration.svg" alt="">
+        </section>
+
+
+        <!---->
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
